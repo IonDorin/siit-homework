@@ -19,7 +19,11 @@ public class SalesRepresentative {
         return revenue;
     }
 
-
+    /** In this method we are sorting an array of objects using bubble-sort method.
+     *
+     * @param reps is the array that needs to be sorted.
+     * @return sorted array reps.
+     */
 
     public static SalesRepresentative[] sort(SalesRepresentative[] reps) {
 
