@@ -4,18 +4,23 @@ public class SalesRepresentative {
 
 
     private final String name;
-    private final int revenue;
+    private final int sales;
+    private final int quota;
+    private  int revenue;
 
 
-    public  SalesRepresentative(String name, int revenue) {
+    public  SalesRepresentative(String name, int sales, int quota) {
 
         this.name = name;
-        this.revenue = revenue;
+        this.sales = sales;
+        this.quota = quota;
 
     }
 
 
     public int getRevenue() {
+        revenue = sales * quota;
+
         return revenue;
     }
 

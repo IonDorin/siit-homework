@@ -5,11 +5,11 @@ public class Main {
 
         SalesRepresentative[] reps = new SalesRepresentative[5];
 
-        SalesRepresentative John = new SalesRepresentative( "John",5000);
-        SalesRepresentative Marry = new SalesRepresentative( "Marry",2000);
-        SalesRepresentative Ted = new SalesRepresentative( "Ted",7000);
-        SalesRepresentative Tom = new SalesRepresentative( "Tom",10000);
-        SalesRepresentative Ana = new SalesRepresentative("Ana", 1400);
+        SalesRepresentative John = new SalesRepresentative( "John",10,400);
+        SalesRepresentative Marry = new SalesRepresentative( "Marry",21,100);
+        SalesRepresentative Ted = new SalesRepresentative( "Ted",15,700);
+        SalesRepresentative Tom = new SalesRepresentative( "Tom",10,1200);
+        SalesRepresentative Ana = new SalesRepresentative("Ana", 4,500);
 
         reps[0] = Ana;
         reps[1] = John;
