@@ -28,13 +28,21 @@ public class Library  {
 
         Books.listbooks(bookList);
 
+        System.out.println("Books added ");
 
 
+        bookList.add(Books.addBook("Huckleberry Finn", 354,"Fantasy"));
+        bookList.add(Books.addBook("Picasso Art Album",139,9));
+        Books.listbooks(bookList);
 
 
 
         System.out.println("After deleted book");
         Books.deleteBooks(bookList,book1);
+
+
+    }
+
 
 
 
@@ -44,4 +52,4 @@ public class Library  {
 
 
 
-}
+

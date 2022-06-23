@@ -27,10 +27,19 @@ public class Books extends Library {
         }
     }
 
+    public static Novels addBook(String name, int numberPages,String genre) {
 
+        return new Novels(name,numberPages,genre);
+    }
+    public static Albums addBook(String name, int numberPages, int paperQuality) {
+
+        return new Albums(name,numberPages,paperQuality);
+    }
     public static void deleteBooks(ArrayList<Books> bookList, Books book) {
 
         bookList.remove(book);
         System.out.println(bookList);
+
     }
+
 }
