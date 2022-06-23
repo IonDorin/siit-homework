@@ -1,8 +1,10 @@
+import java.util.ArrayList;
+
 public class Novels extends Books {
     int index;
     final String genre;
 
-    public Novels(int index, String name, int nrOfPages,String genre) {
+    public Novels(String name, int nrOfPages, String genre) {
         super(name, nrOfPages);
         this.genre = genre;
 
@@ -10,8 +12,10 @@ public class Novels extends Books {
 
 
     public String getGenre() {
+
         return  genre;
     }
+
 
     @Override
     public String toString() {

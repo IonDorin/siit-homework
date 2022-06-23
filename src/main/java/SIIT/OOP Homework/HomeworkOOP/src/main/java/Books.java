@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Books extends Library {
 
@@ -8,22 +7,13 @@ public class Books extends Library {
     private final int nrOfPages;
 
 
-    public Books( String name, int nrOfPages) {
+    public Books(String name, int nrOfPages) {
 
-         this.name = name;
+        this.name = name;
         this.nrOfPages = nrOfPages;
 
     }
 
-
-    public int getNrOfPages() {
-        return nrOfPages;
-    }
-
-
-    public String getName() {
-        return name;
-    }
 
     @Override
     public String toString() {
@@ -32,8 +22,8 @@ public class Books extends Library {
 
 
     public static void listbooks(ArrayList<Books> bookList) {
-        for (int i = 0; i < bookList.size() ; i++) {
-            System.out.println ("At index "+ i+ " we have book "+ bookList.get(i));
+        for (int i = 0; i < bookList.size(); i++) {
+            System.out.println("At index " + i + " we have book " + bookList.get(i));
         }
     }
 
