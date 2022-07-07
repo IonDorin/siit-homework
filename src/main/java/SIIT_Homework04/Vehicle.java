@@ -1,4 +1,4 @@
-package SIIT.homework_OOP_2;
+package SIIT_Homework04;
 
 public interface Vehicle {
     void start();

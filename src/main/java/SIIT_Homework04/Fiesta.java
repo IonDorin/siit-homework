@@ -1,4 +1,4 @@
-package SIIT.homework_OOP_2;
+package SIIT_Homework04;
 
 public class Fiesta extends Ford{
 
@@ -6,7 +6,7 @@ public class Fiesta extends Ford{
         super(availableFuel, tireSize, chassisNumber);
         this.fuelTankSize = 50;
         this.fuelType = "Diesel";
-        this.gears = 5;
+        this.gears = 6;
         this.consumptionPer100Km = 4.5;
     }
 }
