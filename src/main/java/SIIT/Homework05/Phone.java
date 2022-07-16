@@ -11,8 +11,11 @@ public class Phone implements PhoneMethods{
  String color;
  String material;
  String imei;
- double battery;
- private  ArrayList<Contact> contacts;
+  float battery;
+
+
+
+    private  ArrayList<Contact> contacts;
  private ArrayList<Message> messages;
  private ArrayList<Call> callLog;
 
@@ -50,12 +53,18 @@ public class Phone implements PhoneMethods{
          throw new RuntimeException("battery too low, please recharge");
      }
      if(messageContent.length() > 500){
-
+        messageContent.substring(0,500);
+        battery = battery-2;
 
      }
      Message message = new Message(phoneNumber, messageContent);
 
 
+            messages.add(message);
+
+        System.out.println("Sent message: "+messageContent);
+        battery = battery-1;
+        System.out.println("Remaining battery: "+battery);
     }
 
     @Override
@@ -72,7 +81,9 @@ public class Phone implements PhoneMethods{
     public void callHistory() {
 
     }
-
+    public ArrayList<Contact> getContacts() {
+        return contacts;
+    }
 
     }
 
