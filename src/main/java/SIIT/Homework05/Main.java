@@ -13,7 +13,7 @@ public class Main {
 
         phone1.addContact(1,"John","Doe","+31489070");
         phone1.addContact(2,"Jane","Doe","+31485400");
-        phone1.addContact(3,"John","Cena","+31489543");
+        phone1.addContact(3,"Chris","Cena","+31489543");
 
         System.out.println("---------------------");
 
@@ -21,6 +21,24 @@ public class Main {
 
         System.out.println("---------------------");
 
-        phone1.sendMessage("+3148907","hello");
+        phone1.sendMessage("+31489070","hello");
+        phone1.sendMessage("053346733","wyd");
+        phone1.sendMessage(phone1.getContacts().get(0),"Hello John");
+        System.out.println("---------------------");
+
+        phone1.listMessages();
+        System.out.println("---------------------");
+
+        phone1.listMessages(phone1.getContacts().get(0));
+        System.out.println("---------------------");
+
+        phone1.call("0123456789");
+        phone1.call(phone1.getContacts().get(1));
+        phone1.call(phone1.getContacts().get(2));
+        System.out.println("---------------------");
+
+        phone1.callHistory();
+
     }
+
 }
