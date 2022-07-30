@@ -52,5 +52,11 @@ public class Main {
 for (Map.Entry<Person,List<Hobby>> entry: personMap.entrySet()){
     System.out.println(entry.getKey()+"->"+entry.getValue());
 }
+        System.out.println("--------------------");
+
+        for(Person person : personMap.keySet()){
+            System.out.println(John + ">" + personMap.get(John));
+            break;
+        }
     }
 }
