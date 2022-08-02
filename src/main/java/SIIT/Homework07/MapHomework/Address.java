@@ -1,9 +1,9 @@
 package SIIT.Homework07.MapHomework;
 
 public class Address {
-    private String country;
-    private String city;
-    private String details;
+    private final String country;
+    private final String city;
+    private final String details;
 
     public Address(String country,String city,String details) {
         this.country = country;
